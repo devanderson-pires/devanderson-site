@@ -1,4 +1,4 @@
-import Head from '../src/infra/components/Head';
+import Head from '../infra/components/Head';
 
 function Home() {
 
