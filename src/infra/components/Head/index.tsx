@@ -1,10 +1,6 @@
 import NextHead from 'next/head';
 
-interface Head {
-    title: string
-}
-
-function Head({ title }: Head) {
+function Head({ title }) {
 
     return (
         <NextHead>
