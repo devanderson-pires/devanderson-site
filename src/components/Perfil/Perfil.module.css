@@ -1,0 +1,79 @@
+.perfil {
+    align-items: center;
+    background-color: #283996;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3);
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 16px;
+}
+
+.perfil__foto {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.perfil__nome {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 24px 0 15px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, .6);
+}
+
+.perfil__cargo {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+
+.perfil__tecnologia {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 50px 0 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+}
+
+.perfil__stack {
+    display: flex;
+}
+
+.perfil__stack li:nth-child(2) {
+    margin: 0 50px;
+}
+
+.perfil__redes {
+    display: flex;
+    margin-top: 50px;
+}
+
+.perfil__redes li:nth-child(2) {
+    margin: 0 15px;
+}
+
+.redes__link {
+    align-items: center;
+    border-bottom: 2px solid #f9f9f9;
+    color: #fafafa;
+    display: flex;
+    font-size: 18px;
+    padding: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.redes__link:focus, .redes__link:hover {
+    background-color: #f9f9f9;
+    color: #283996;
+}
+
+.redes__icon {
+    margin-right: 10px;
+}
+
+.ocultaTexto {
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+}
