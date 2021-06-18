@@ -10,7 +10,7 @@ function Footer() {
 
             <a href='#' target='_blank' rel='noopener noreferrer' className={ styles.footer__link }>
                 Source Code
-                <FaExternalLinkSquareAlt size={ 24 } className={ styles.footer__icon } />
+                <FaExternalLinkSquareAlt size={ 15 } className={ styles.footer__icon } />
             </a>
         </footer>
     );

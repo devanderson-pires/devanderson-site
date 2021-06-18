@@ -37,19 +37,19 @@ function Perfil() {
             <ul className={ styles.perfil__redes }>
                 <li>
                     <a href='https://www.linkedin.com/in/devanderson-pires/' target='_blank' rel='noopener noreferrer' className={ styles.redes__link }>
-                        <FaLinkedin size={ 24 } className={ styles.redes__icon }/>
+                        <FaLinkedin size={ 18 } className={ styles.redes__icon }/>
                         <span>LinkedIn</span>
                     </a>
                 </li>
                 <li>
                     <a href='https://github.com/devanderson-pires' target='_blank' rel='noopener noreferrer' className={ styles.redes__link }>
-                        <FaGithub size={ 24 } className={ styles.redes__icon }/>
+                        <FaGithub size={ 18 } className={ styles.redes__icon }/>
                         <span>GitHub</span>
                     </a>
                 </li>
                 <li>
                     <a href='https://www.instagram.com/devanderson.pires/' target='_blank' rel='noopener noreferrer' className={ styles.redes__link }>
-                        <FaInstagram size={ 24 } className={ styles.redes__icon }/>
+                        <FaInstagram size={ 18 } className={ styles.redes__icon }/>
                         <span>Instagram</span>
                     </a>
                 </li>
