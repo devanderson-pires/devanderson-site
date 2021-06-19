@@ -39,3 +39,17 @@
     background-color: #283996;
     color: #fff;
 }
+
+/* Media Query */
+@media(max-width: 576px) {
+    .projetos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(min-width: 576px) and (max-width: 992px) {
+    .projetos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

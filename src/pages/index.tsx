@@ -29,8 +29,10 @@ function Home({ projetos }: InferGetStaticPropsType<typeof getStaticProps>) {
                 <Perfil />
                 
                 <h2>Projetos</h2>
-
-                <ListaDeProjetos projetos={ projetos } />
+                
+                <div className='container'>
+                    <ListaDeProjetos projetos={ projetos } />
+                </div>
             </main><style jsx>{`
                 h2 {
                     color: #283996;

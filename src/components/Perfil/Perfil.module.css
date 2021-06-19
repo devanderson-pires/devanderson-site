@@ -77,3 +77,14 @@
     overflow: hidden;
     position: absolute;
 }
+
+/* Media Query */
+@media(max-width: 576px) {
+    .perfil__redes {
+        flex-direction: column;
+    }
+
+    .perfil__redes li:nth-child(2) {
+        margin: 15px 0;
+    }
+}
