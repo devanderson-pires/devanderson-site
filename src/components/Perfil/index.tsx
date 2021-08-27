@@ -8,7 +8,7 @@ function Perfil() {
     return (
         <div className={ styles.perfil }>
             <Image 
-                alt='Foto de Anderson'
+                alt=''
                 className={ styles.perfil__foto }
                 height={ 170 }
                 src='/'

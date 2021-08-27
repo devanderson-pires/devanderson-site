@@ -11,6 +11,12 @@
     font-size: 15px;
     line-height: 1.4;
     padding: 20px 22px;
+    transition: all .2s ease-out;
+}
+
+.projeto:focus, .projeto:hover {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .3);
+    transform: translateY(-2px);
 }
 
 .projeto__nome {
@@ -32,7 +38,7 @@
     color: inherit;
     display: inline-flex;
     padding: 12px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-out;
 }
 
 .projeto__link:focus, .projeto__link:hover {

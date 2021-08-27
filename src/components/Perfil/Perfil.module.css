@@ -60,7 +60,7 @@
     display: flex;
     font-size: 18px;
     padding: 12px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-out;
 }
 
 .redes__link:focus, .redes__link:hover {

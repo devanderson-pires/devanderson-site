@@ -28,6 +28,18 @@ p, h3 {
     max-width: 1140px;
 }
 
+.div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    color: #283996;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
 /* Media Query */
 @media(max-width: 575.98px) {
     .container {
