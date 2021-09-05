@@ -17,16 +17,16 @@ export async function getStaticProps() {
     const projetos: Projetos[] = await res.json();
 
     return {
-        props: { projetos }
+        props: { projetos, avatar_url: 'https://avatars.githubusercontent.com/u/56002513?v=4' }
     }
 }
 
-function Home({ projetos }: InferGetStaticPropsType<typeof getStaticProps>) {
+function Home({ projetos, avatar_url }: InferGetStaticPropsType<typeof getStaticProps>) {
     return (
         <>
             <Head title='Anderson Pires - Programador Full Stack' />
             <main>
-                <Perfil />
+                <Perfil avatar_url={ avatar_url } />
                 
                 <h2>Projetos</h2>
                 

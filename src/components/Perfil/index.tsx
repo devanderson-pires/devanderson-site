@@ -3,15 +3,21 @@ import { FaPhp, FaJs, FaPython, FaLinkedin, FaGithub, FaInstagram } from 'react-
 
 import styles from './Perfil.module.css';
 
-function Perfil() {
+const myLoader = ({ src }) => src;
 
+type Avatar = {
+    avatar_url: string;
+}
+
+function Perfil({ avatar_url }: Avatar) {
     return (
         <div className={ styles.perfil }>
             <Image 
                 alt=''
                 className={ styles.perfil__foto }
                 height={ 170 }
-                src='/'
+                loader={ myLoader }
+                src={ avatar_url }
                 width={ 170 }
             />
 
