@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
-
 import styles from './ListaDeProjetos.module.css';
 
 function ListaDeProjetos({ projetos }) {

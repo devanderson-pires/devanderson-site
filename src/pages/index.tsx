@@ -28,12 +28,12 @@ function Home({ projetos, avatar_url }: InferGetStaticPropsType<typeof getStatic
         <>
             <Head title='Anderson Pires - Programador Full Stack' />
             <main>
-                <Perfil avatar_url={ avatar_url } />
-                
+                <Perfil avatar_url={avatar_url} />
+
                 <h2>Projetos</h2>
-                
+
                 <div className='container'>
-                    <ListaDeProjetos projetos={ projetos } />
+                    <ListaDeProjetos projetos={projetos} />
                 </div>
             </main><style jsx>{`
                 h2 {
@@ -46,7 +46,7 @@ function Home({ projetos, avatar_url }: InferGetStaticPropsType<typeof getStatic
                     text-transform: uppercase;
                 }
             `}</style>
-            
+
             <Footer />
         </>
     );

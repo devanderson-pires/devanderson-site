@@ -1,10 +1,9 @@
 import NextHead from 'next/head';
 
 function Head({ title }) {
-
     return (
         <NextHead>
-            <title>{ title }</title>
+            <title>{title}</title>
         </NextHead>
     );
 }
