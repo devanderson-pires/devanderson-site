@@ -28,13 +28,16 @@
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 1px;
-}
-.projeto__tecnologias {
-    margin: 10px 0;
+    text-align: center;
 }
 
 .projeto__descricao {
-    margin-bottom: 15px;
+    margin: 10px 0 15px;
+}
+
+.projeto__links {
+    display: flex;
+    justify-content: center;
 }
 
 .projeto__link {
@@ -57,7 +60,6 @@
         grid-template-columns: 1fr;
     }
 }
-
 
 @media(min-width: 576px) and (max-width: 992px) {
     .projetos {

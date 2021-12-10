@@ -6,14 +6,16 @@ import ListaDeProjetos from '../components/ListaDeProjetos';
 
 type Projetos = {
     id: number;
+    img_path: string | null;
     name: string;
     description: string;
-    html_url: string;
-    language: string;
+    repo: string;
+    demo: string | null;
+    languages: Array<string>;
 }
 
 export async function getStaticProps() {
-    const res = await fetch('https://api.github.com/users/devanderson-pires/repos');
+    const res = await fetch('https://devanderson-projetos.herokuapp.com/api/projects');
     const projetos: Projetos[] = await res.json();
 
     return {
