@@ -28,16 +28,10 @@
     font-size: 20px;
     font-weight: 300;
     letter-spacing: 1px;
-    text-align: center;
 }
 
 .projeto__descricao {
     margin: 10px 0 15px;
-}
-
-.projeto__links {
-    display: flex;
-    justify-content: center;
 }
 
 .projeto__link {

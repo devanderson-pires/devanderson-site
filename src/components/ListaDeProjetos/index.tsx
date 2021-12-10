@@ -25,7 +25,7 @@ function ListaDeProjetos({ projetos }) {
                                     <FaExternalLinkSquareAlt size={15} style={{ marginLeft: 10 }} />
                                 </a>
 
-                                {projeto.demo ? (
+                                {!projeto.demo ? (
                                     <a href={projeto.repo} target="_blank" rel="noopener noreferrer" className={styles.projeto__link} style={{ marginLeft: 15 }}>
                                         Demo
                                         <FaExternalLinkSquareAlt size={15} style={{ marginLeft: 10 }} />
