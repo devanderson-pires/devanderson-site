@@ -3,16 +3,7 @@ import Head from '../infra/components/Head';
 import Perfil from '../components/Perfil';
 import Footer from '../components/Footer';
 import ListaDeProjetos from '../components/ListaDeProjetos';
-
-type Projetos = {
-    id: number;
-    img_path: string | null;
-    name: string;
-    description: string;
-    repo: string;
-    demo: string | null;
-    languages: Array<string>;
-}
+import { Projetos } from '../types';
 
 export async function getStaticProps() {
     const res = await fetch('https://devanderson-projetos.herokuapp.com/api/projects');

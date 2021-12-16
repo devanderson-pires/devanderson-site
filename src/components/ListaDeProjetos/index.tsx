@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+import { Projetos } from '../../types';
 import styles from './ListaDeProjetos.module.css';
 
-function ListaDeProjetos({ projetos }) {
+function ListaDeProjetos({ projetos }: { projetos: Projetos[] }) {
     const [show, setShow] = useState(false);
 
     return (
@@ -12,8 +13,10 @@ function ListaDeProjetos({ projetos }) {
                     .slice(0, show ? 12 : 3)
                     .map(projeto => (
                         <li key={projeto.id} className={styles.projeto}>
-                            {projeto.img_path && <img src={`https://devanderson-projetos.herokuapp.com/${projeto.img_path}`} alt="" className={styles.projeto__foto} />}
-                            
+                            {
+                                projeto.img_path ? <img src={`https://devanderson-projetos.herokuapp.com/${projeto.img_path}`} alt="" className={styles.projeto__foto} /> : <span className={styles.projeto__noImage}>No image</span>
+                            }
+
                             <h3 className={styles.projeto__nome}>{projeto.title}</h3>
 
                             <p className={styles.projeto__descricao}>{projeto.description}</p>
@@ -24,12 +27,12 @@ function ListaDeProjetos({ projetos }) {
                                     <FaExternalLinkSquareAlt size={15} style={{ marginLeft: 10 }} />
                                 </a>
 
-                                {projeto.demo ? (
-                                    <a href={projeto.repo} target="_blank" rel="noopener noreferrer" className={styles.projeto__link} style={{ marginLeft: 15 }}>
+                                {projeto.demo && (
+                                    <a href={projeto.demo} target="_blank" rel="noopener noreferrer" className={styles.projeto__link} style={{ marginLeft: 15 }}>
                                         Demo
                                         <FaExternalLinkSquareAlt size={15} style={{ marginLeft: 10 }} />
                                     </a>
-                                ) : ''}
+                                )}
                             </div>
                         </li>
                     ))}

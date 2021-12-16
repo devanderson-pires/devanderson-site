@@ -24,6 +24,18 @@
     width: 100%;
 }
 
+.projeto__noImage {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    height: 212.66px;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
 .projeto__nome {
     font-size: 20px;
     font-weight: 300;
